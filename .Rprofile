@@ -1,4 +1,5 @@
 # setup if using with vscode and R plugin
+options(vsc.rstudioapi = TRUE)
 if (Sys.getenv("TERM_PROGRAM") == "vscode") {
     source(file.path(Sys.getenv(if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME"), ".vscode-R", "init.R"))
 }
